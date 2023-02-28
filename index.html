@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Created by Tivotal-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sortable List - Tivotal</title>
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <!--css file-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="item">
+        <span class="text">draggable item one</span>
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="item">
+        <span class="text">draggable item two</span>
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="item">
+        <span class="text">draggable item three</span>
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="item">
+        <span class="text">draggable item four</span>
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="item">
+        <span class="text">draggable item five</span>
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+
+    <!--sortable-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+      $(function () {
+        $(".wrapper").sortable();
+      });
+    </script>
+  </body>
+</html>
